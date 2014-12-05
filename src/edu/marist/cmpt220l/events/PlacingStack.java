@@ -6,4 +6,20 @@ package edu.marist.cmpt220l.events;
 public class PlacingStack
 {
     // this is essentially a linked list that will work as a stack
+
+    private PlacingStack firstSet;
+    private PlacingStack lastSet;
+
+    public void push()
+    {
+
+    }
+    public void pop()
+    {
+
+    }
+    public boolean isEmpty()
+    {
+        return firstSet == null;
+    }
 }
