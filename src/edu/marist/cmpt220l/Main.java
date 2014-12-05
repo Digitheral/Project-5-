@@ -155,8 +155,8 @@ public class Main {
     }
 
     /**
-     * Start a new competition within the application
      *
+     * Start a new competition within the application -- this command is to be removed for Project 5
      * @throws IOException
      */
     private void startCompetition() throws IOException
