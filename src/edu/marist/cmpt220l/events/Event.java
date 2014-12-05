@@ -4,6 +4,11 @@ import edu.marist.cmpt220l.teams.Team;
 
 // Implement a queue and stack into this class  every team should be pushed onto the queue and the stack should start empty
 // Most of this project is working with these within this class
+
+// Each event should have its own bracket! So we need 6 total brackets
+// Should they go in the actual subevents or the events main class?
+
+
 /**
  * An abstract event that can be played by olympians
  */
@@ -110,7 +115,7 @@ public abstract class Event{
         this.playDistance = playDistance;
     }
 
-    // Peak next teams in the queue does not dequque them
+    // Peak next teams in the queue does not dequeue them
     public Team[] PeakNextTeams(){return null;}
 
     // Dequeues and returns the next two teams from the bracket system
