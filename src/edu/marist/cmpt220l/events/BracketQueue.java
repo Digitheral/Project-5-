@@ -1,10 +1,11 @@
 package edu.marist.cmpt220l.events;
 
+import edu.marist.cmpt220l.teams.Team;
+
 /**
  * Created by Art on 12/4/2014.
  */
-public class BracketQueue
-{
+public class BracketQueue {
     // this is essentially a linked list that will work as a queue
 
     private BracketQueue firstSet;
@@ -13,11 +14,9 @@ public class BracketQueue
 
     // this method will enqueue
 
-    public void enqueue(int value)
-    {
+    public void enqueue(int value) {
         BracketQueue newSet = new BracketQueue(value);
-        if(lastSet != null)
-        {
+        if (lastSet != null) {
             lastSet.next = newVal;
             last = newVal;
         }
@@ -25,14 +24,24 @@ public class BracketQueue
 
     // this method will dequeue
 
-    public void dequeue()
-    {
-        if(firstSet != null)
-        {
+    public void dequeue() {
+        if (firstSet != null) {
             BracketQueue currSet = firstSet;
             firstSet = firstSet.next;
             return currSet.value;
         }
     }
+
+    public boolean isEmpty() {
+        return firstSet == null;
+    }
+
+    // Peak next teams in the queue does not dequque them
+    public Team[] PeakNextTeams(){return null;}
+
+    // Dequeues and returns the next two teams from the bracket system
+    public Team[] GetNextTeams(){return null;}
+
+    // Saves who wins or loses within the system
+    public void ReturnTeams(Team winner, Team loser){}
 }
-    
