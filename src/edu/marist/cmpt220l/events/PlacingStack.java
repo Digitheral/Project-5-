@@ -10,14 +10,19 @@ public class PlacingStack
     private PlacingStack firstSet;
     private PlacingStack lastSet;
 
+    // Adds teams to the stack
     public void push()
     {
 
     }
+
+    // Removes teams from the stack
     public void pop()
     {
 
     }
+
+    // Checks to see if the stack is empty
     public boolean isEmpty()
     {
         return firstSet == null;
