@@ -26,30 +26,27 @@
       <file leaf-file-name="Event.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/marist/cmpt220l/events/Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1277" max-vertical-offset="1751">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="1904">
+              <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BracketQueue.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BracketQueue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/marist/cmpt220l/events/BracketQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.613924" vertical-offset="0" max-vertical-offset="884">
-              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-              <folding>
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="748">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlacingStack.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PlacingStack.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/marist/cmpt220l/events/PlacingStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state vertical-scroll-proportion="0.25105485" vertical-offset="0" max-vertical-offset="474">
               <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
               <folding />
             </state>
@@ -85,6 +82,7 @@
         <option value="$PROJECT_DIR$/src/edu/marist/cmpt220l/events/WashoosEvent.java" />
         <option value="$PROJECT_DIR$/src/edu/marist/cmpt220l/Main.java" />
         <option value="$PROJECT_DIR$/src/edu/marist/cmpt220l/events/PlacingStack.java" />
+        <option value="$PROJECT_DIR$/src/edu/marist/cmpt220l/events/QueueItem.java" />
         <option value="$PROJECT_DIR$/src/edu/marist/cmpt220l/events/Event.java" />
         <option value="$PROJECT_DIR$/src/edu/marist/cmpt220l/events/BracketQueue.java" />
       </list>
@@ -488,30 +486,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/marist/cmpt220l/events/PlacingStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/marist/cmpt220l/events/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1277" max-vertical-offset="1751">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="1904">
+          <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/marist/cmpt220l/events/BracketQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.613924" vertical-offset="0" max-vertical-offset="884">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-          <folding>
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="748">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/marist/cmpt220l/events/PlacingStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25105485" vertical-offset="0" max-vertical-offset="474">
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>

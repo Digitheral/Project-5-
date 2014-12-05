@@ -14,7 +14,7 @@ public class BracketQueue {
 
     // this method will enqueue
 
-    public void enqueue(int value) {
+/*    public void enqueue(int value) {
         BracketQueue newSet = new BracketQueue(value);
         if (lastSet != null) {
             lastSet.next = newVal;
@@ -35,13 +35,5 @@ public class BracketQueue {
     public boolean isEmpty() {
         return firstSet == null;
     }
-
-    // Peak next teams in the queue does not dequque them
-    public Team[] PeakNextTeams(){return null;}
-
-    // Dequeues and returns the next two teams from the bracket system
-    public Team[] GetNextTeams(){return null;}
-
-    // Saves who wins or loses within the system
-    public void ReturnTeams(Team winner, Team loser){}
+*/
 }

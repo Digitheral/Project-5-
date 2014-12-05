@@ -110,4 +110,13 @@ public abstract class Event{
         this.playDistance = playDistance;
     }
 
+    // Peak next teams in the queue does not dequque them
+    public Team[] PeakNextTeams(){return null;}
+
+    // Dequeues and returns the next two teams from the bracket system
+    public Team[] GetNextTeams(){return null;}
+
+    // Saves who wins or loses within the system
+    public void ReturnTeams(Team winner, Team loser){}
+
 }
