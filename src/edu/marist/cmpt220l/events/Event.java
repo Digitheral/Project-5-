@@ -115,32 +115,7 @@ public abstract class Event{
 
     // this method will enqueue
 
-    public void enqueue(int value) {
-        if (lastSet != null) {
-          //  lastSet.nextQ = currSet.currNode;
-        }
-    }
-
-    // this method will dequeue
-
-    public void dequeue() {
-        currSet = firstSet;
-        if (firstSet == null)
-        {
-            System.out.println("Nothing to dequeue");
-        }
-   //     firstSet = firstSet.next;
-        if(firstSet == null)
-        {
-            lastSet = null;
-        }
-    }
-    // If the queue is empty we return null
-
-    public boolean isEmpty() {
-        return firstSet == null;
-    }
-    public Team[] PeakNextTeams()
+     public Team[] PeakNextTeams()
     {
         if(firstSet != null)
         {

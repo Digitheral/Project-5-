@@ -24,6 +24,7 @@ public class EventManager {
                 new LadderBallEvent(),
                 new StickGameEvent()};
         BracketQueue newQueue = new BracketQueue(tm);
+        PlacingStack newStack = new PlacingStack();
     }
 
     /**

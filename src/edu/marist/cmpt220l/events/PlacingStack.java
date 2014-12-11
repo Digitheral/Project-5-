@@ -14,6 +14,7 @@ public class PlacingStack
     private Node currSet = new Node();
 
     // Adds teams to the stack
+
     public void push()
     {
         currSet.currStack = firstSet;

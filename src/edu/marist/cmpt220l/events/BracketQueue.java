@@ -10,8 +10,9 @@ import edu.marist.cmpt220l.teams.TeamManager;
 public class BracketQueue{
     // this is essentially a linked list that will work as a queue
 
-    private Node currSet = null;
-    private Node next;
+    private BracketQueue firstSet = null;
+    private BracketQueue lastSet = null;
+    private Node currSet = new Node();
     public BracketQueue(TeamManager tm)
     {
         Team[] team = tm.getTeams();
@@ -19,13 +20,38 @@ public class BracketQueue{
         System.out.println(tm.teams[0].getOlympian1().getName());
         for(int i=0; i < tm.getTeams().length; i++)
         {
-            // The queue always starts as empty
-
-            //    This is producing a null pointer exception
-          //    this.firstSet.value = team[0];
-           //   this.lastSet.value = team[tm.getTeams().length];
-
+            enqueue(team[i]);
         }
     }
+    public void enqueue(Team value) {
+        if (lastSet != null)
+        {
+            // This reference isn't working correctly.
+            lastSet.nextQ = currSet;
+        }
+    }
+
+    // this method will dequeue
+
+    public Team dequeue()
+    {
+        currSet.currNode = firstSet;
+        if (firstSet == null)
+        {
+            System.out.println("Nothing to dequeue");
+        }
+        //     firstSet = firstSet.next;
+        if(firstSet == null)
+        {
+            lastSet = null;
+        }
+        return currSet.value;
+    }
+    // If the queue is empty we return null
+
+    public boolean isEmpty() {
+        return firstSet == null;
+    }
+
 
 }
