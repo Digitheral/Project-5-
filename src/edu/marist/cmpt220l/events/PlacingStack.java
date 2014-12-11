@@ -13,13 +13,13 @@ public class PlacingStack
     // Adds teams to the stack
     public void push()
     {
-
+        firstSet.push();
     }
 
     // Removes teams from the stack
     public void pop()
     {
-
+        firstSet.pop();
     }
 
     // Checks to see if the stack is empty

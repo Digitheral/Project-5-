@@ -17,8 +17,9 @@ public abstract class Event{
     private boolean isPlayToExact;
     private int playDistance;
     private BracketQueue newQueue;
-    private BracketQueue next;
-    private BracketQueue prev;
+    private BracketQueue firstSet;
+    private BracketQueue lastSet;
+    private BracketQueue currSet;
 
     /**
      * Construct a new event, this should be called by whomever subclasses this class
@@ -117,9 +118,42 @@ public abstract class Event{
     }
 
     // Peak next teams in the queue does not dequeue them
+
+
+    // this method will enqueue
+
+    public void enqueue(int value) {
+        if (lastSet != null) {
+            lastSet.next = currSet.currNode;
+        }
+    }
+
+    // this method will dequeue
+
+    public void dequeue() {
+        currSet = firstSet;
+        if (firstSet == null)
+        {
+            System.out.println("Nothing to dequeue");
+        }
+        firstSet = firstSet.next;
+        if(firstSet == null)
+        {
+            lastSet = null;
+        }
+    }
+
+    // If the queue is empty we return null
+
+    public boolean isEmpty() {
+        return firstSet == null;
+    }
     public Team[] PeakNextTeams()
     {
-        return null; //{newQueue.next, newQueue.next.next};
+        if(firstSet != null)
+        {
+            return firstSet;
+        }
     }
 
     // Dequeues and returns the next two teams from the bracket system
@@ -134,5 +168,6 @@ public abstract class Event{
         loser.incrementLosses();
         winner.incrementWins();
     }
+
 
 }

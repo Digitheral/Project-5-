@@ -7,8 +7,7 @@ import edu.marist.cmpt220l.teams.Team;
  */
 public class Node{
     public Team value = null;
-    public BracketQueue prev; // previous not used yet
-    public BracketQueue next;
-    public BracketQueue currNode;
+    public BracketQueue next = null;
+    public BracketQueue currNode = null;
 
 }

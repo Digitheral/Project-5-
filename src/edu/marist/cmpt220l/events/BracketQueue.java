@@ -10,13 +10,12 @@ import edu.marist.cmpt220l.teams.TeamManager;
 public class BracketQueue{
     // this is essentially a linked list that will work as a queue
 
-    private Node firstSet = null;
-    private Node lastSet = null;
     private Node currSet = null;
-    private Node next, prev;
+    private Node next;
     public BracketQueue(TeamManager tm)
     {
         Team[] team = tm.getTeams();
+        // This is showing we are actually getting the teams into the Queue but below we're having an issue with referencing
         System.out.println(tm.teams[0].getOlympian1().getName());
         for(int i=0; i < tm.getTeams().length; i++)
         {
@@ -28,28 +27,5 @@ public class BracketQueue{
 
         }
     }
-    // this method will enqueue
 
-     public void enqueue(int value) {
-        int newVal = 0;
-        if (lastSet != null) {
-            lastSet.next = currSet.currNode;
-            lastSet = currSet;
-        }
-    }
-
-    // this method will dequeue
-
-    public void dequeue() {
-        if (firstSet != null) {
-            currSet = firstSet;
-            firstSet.next = currSet.next;
-        }
-    }
-
-    // If the queue is empty we return null
-
-    public boolean isEmpty() {
-        return firstSet == null;
-    }
 }
