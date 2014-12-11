@@ -2,11 +2,10 @@ package edu.marist.cmpt220l.events;
 
 import edu.marist.cmpt220l.teams.Team;
 
-// Implement a queue and stack into this class  every team should be pushed onto the queue and the stack should start empty
-// Most of this project is working with these within this class
-
-// Each event should have its own bracket! So we need 6 total brackets
-// Should they go in the actual subevents or the events main class?
+// the queue needs to be filled
+// the queue and stack need to function
+// the SC needs to be removed and worked into Events
+// GG
 
 
 /**
@@ -17,9 +16,9 @@ public abstract class Event{
     private int playTo;
     private boolean isPlayToExact;
     private int playDistance;
+    private BracketQueue newQueue;
     private BracketQueue next;
     private BracketQueue prev;
-    private int value;
 
     /**
      * Construct a new event, this should be called by whomever subclasses this class
@@ -34,6 +33,7 @@ public abstract class Event{
         this.playTo = playTo;
         this.isPlayToExact = isPlayToExact;
         this.playDistance = playDistance;
+
     }
 
     /**
@@ -71,6 +71,7 @@ public abstract class Event{
     }
 
     /**
+     *
      * Set the number of points to play to for this event
      *
      * @param playTo the number of points to play to for this event
@@ -116,12 +117,22 @@ public abstract class Event{
     }
 
     // Peak next teams in the queue does not dequeue them
-    public Team[] PeakNextTeams(){return null;}
+    public Team[] PeakNextTeams()
+    {
+        return null; //{newQueue.next, newQueue.next.next};
+    }
 
     // Dequeues and returns the next two teams from the bracket system
-    public Team[] GetNextTeams(){return null;}
+    public Team[] GetNextTeams()
+    {
+        return null;
+    }
 
-    // Saves who wins or loses within the system
-    public void ReturnTeams(Team winner, Team loser){}
+    // Increments losses and wins
+    public void ReturnTeams(Team winner, Team loser)
+    {
+        loser.incrementLosses();
+        winner.incrementWins();
+    }
 
 }

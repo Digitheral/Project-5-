@@ -11,7 +11,7 @@ import java.util.Random;
  * A TeamManager manages instances of teams
  */
 public class TeamManager {
-    private Team[] teams;
+    public Team[] teams;
 
     /**
      * Construct a new TeamManager object.

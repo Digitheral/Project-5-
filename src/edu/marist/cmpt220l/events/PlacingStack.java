@@ -7,8 +7,8 @@ public class PlacingStack
 {
     // this is essentially a linked list that will work as a stack
 
-    private PlacingStack firstSet;
-    private PlacingStack lastSet;
+    private PlacingStack firstSet = null;
+    private PlacingStack lastSet = null;
 
     // Adds teams to the stack
     public void push()

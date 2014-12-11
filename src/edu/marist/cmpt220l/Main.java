@@ -36,7 +36,7 @@ public class Main {
     {
         om = new OlympianManager(filePath);
         tm = new TeamManager(om);
-        em = new EventManager();
+        em = new EventManager(tm);
         cm = new CompetitionManager(em, tm);
     }
 
@@ -147,7 +147,6 @@ public class Main {
         System.out.println();
 
         ICompetition[] competitions = cm.getCompetitions();
-
         System.out.println("Event        Home Team             Away Team");
         System.out.println("-----------  --------------------  --------------------");
         for(int i=0; i < competitions.length; i++)
