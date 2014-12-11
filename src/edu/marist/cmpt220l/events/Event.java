@@ -1,13 +1,6 @@
 package edu.marist.cmpt220l.events;
 
 import edu.marist.cmpt220l.teams.Team;
-
-// the queue needs to be filled
-// the queue and stack need to function
-// the SC needs to be removed and worked into Events
-// GG
-
-
 /**
  * An abstract event that can be played by olympians
  */
@@ -124,7 +117,7 @@ public abstract class Event{
 
     public void enqueue(int value) {
         if (lastSet != null) {
-            lastSet.next = currSet.currNode;
+          //  lastSet.nextQ = currSet.currNode;
         }
     }
 
@@ -136,13 +129,12 @@ public abstract class Event{
         {
             System.out.println("Nothing to dequeue");
         }
-        firstSet = firstSet.next;
+   //     firstSet = firstSet.next;
         if(firstSet == null)
         {
             lastSet = null;
         }
     }
-
     // If the queue is empty we return null
 
     public boolean isEmpty() {
@@ -152,13 +144,15 @@ public abstract class Event{
     {
         if(firstSet != null)
         {
-            return firstSet;
+         //   return firstSet.nextQ;
         }
+        return null;
     }
 
     // Dequeues and returns the next two teams from the bracket system
     public Team[] GetNextTeams()
     {
+       // return {firstSet,firstSet.nextQ};
         return null;
     }
 

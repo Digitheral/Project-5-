@@ -7,7 +7,10 @@ import edu.marist.cmpt220l.teams.Team;
  */
 public class Node{
     public Team value = null;
-    public BracketQueue next = null;
+    public BracketQueue nextQ = null;
     public BracketQueue currNode = null;
+    public PlacingStack nextS = null;
+    public PlacingStack currStack = null;
+
 
 }

@@ -1,5 +1,8 @@
 package edu.marist.cmpt220l;
-
+// Using Professor Brian Smith's Code
+// Arthur Pearson
+// Project 5
+// Incomplete right now - implementation of stack and queue are here - not fully working, reference issues.
 import edu.marist.cmpt220l.competitions.CompetitionManager;
 import edu.marist.cmpt220l.competitions.ICompetition;
 import edu.marist.cmpt220l.events.Event;
@@ -69,8 +72,9 @@ public class Main {
                     listTeams();
                 else if("c".equals(line) || "competitions".equals(line))
                     listCompetitions();
-                else if("sc".equals(line) || "startcompetition".equals(line))
-                    startCompetition();
+                        // You can no longer use SC in Project 5
+           //     else if("sc".equals(line) || "startcompetition".equals(line))
+           //         startCompetition();
                 else if("ec".equals(line) || "endcompetition".equals(line))
                     endCompetition();
                 else if("h".equals(line) || "help".equals(line))
@@ -312,7 +316,7 @@ public class Main {
         System.out.println("e   events            List the events in the system");
         System.out.println("t   teams             List the teams in the system");
         System.out.println("c   competitions      List the current competitions in the system");
-        System.out.println("sc  startcompetition  Start a new competition");
+      //  System.out.println("sc  startcompetition  Start a new competition");
         System.out.println("ec  endcompetition    End a currently running competition");
         System.out.println("h   help              Show this help screen");
         System.out.println("q   quit              Quit the program");
